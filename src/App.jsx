@@ -4,6 +4,7 @@ import { profile } from "./data/profile"
 function App() {
   const [now, setNow] = useState(new Date())
   const [randomText, setRandomText] = useState(profile.randomSentences[0])
+  const [surpriseText, setSurpriseText] = useState("点一下，看看今天的小彩蛋。")
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -16,6 +17,10 @@ function App() {
   function changeRandomText() {
     const index = Math.floor(Math.random() * profile.randomSentences.length)
     setRandomText(profile.randomSentences[index])
+  }
+  function showSurprise() {
+    const index = Math.floor(Math.random() * profile.surprises.length)
+    setSurpriseText(profile.surprises[index])
   }
 
   const dateText = now.toLocaleDateString("zh-CN", {
@@ -166,6 +171,19 @@ function App() {
               className="mt-5 rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm text-zinc-300 transition hover:border-violet-300/50 hover:bg-violet-300/10 hover:text-white"
             >
               换一句
+            </button>
+          </Card>
+          {/* Little Surprise */}
+          <Card title="Little Surprise" emoji="🎲">
+            <p className="min-h-20 leading-7 text-zinc-300">
+              {surpriseText}
+            </p>
+
+            <button
+              onClick={showSurprise}
+              className="mt-5 rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm text-zinc-300 transition hover:border-cyan-300/50 hover:bg-cyan-300/10 hover:text-white"
+            >
+              抽一个小彩蛋
             </button>
           </Card>
 
