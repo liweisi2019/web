@@ -1,0 +1,69 @@
+export const profile = {
+  siteName: "Weisi.",
+  name: "Weisi",
+  heroLabel: "Hi, welcome to my little space.",
+  heroTitle: "I'm Weisi,",
+  heroHighlight: "这是我的小世界.",
+
+  description:
+    "这里是我的个人主页。平时会放一些学习记录、生活碎片、喜欢的东西，还有一些突然冒出来的小想法。它不一定很正式，但会慢慢变成一个属于我自己的小空间。",
+
+  avatar: "/pig.jpg",
+
+  tags: ["写代码", "听歌", "健身摸索中", "生活记录", "慢慢折腾"],
+
+  status: {
+    title: "Current Status",
+    text: "偶尔焦虑，但还在慢慢推进。",
+    moodLabel: "Mood",
+    mood: "缓慢推进中。",
+  },
+
+  now: [
+    "最近在学：C++、Linux",
+    "最近在做：搭建自己的个人主页",
+    "最近在听：一些适合发呆和学习的歌",
+  ],
+
+  music:
+    "喜欢用歌记录某一段时间的状态。以后这里可以做成音乐记录卡片。",
+
+  randomSentences: [
+  "今天先不管做得多高级，至少我已经拥有了一个能打开的小站。",
+  "慢一点也没事，反正我还在往前走。",
+  "先做出来，再慢慢变好。",
+  "今天的状态：能运行就算胜利。",
+  "世界很吵，但这里可以安静一点。",
+  "这个网站会慢慢长成我自己的样子。",
+],
+
+  about:
+    "我目前是一名研究生，平时大部分时间都在学习、写代码和处理各种事情。这个网站不是简历，也不是正式博客，更像是一个可以慢慢更新的个人角落。以后可能会放一些学习笔记、音乐记录、生活想法，或者一些没什么用但挺有意思的小东西。",
+
+  likes: [
+    {
+      title: "音乐",
+      text: "记录状态和情绪。",
+    },
+    {
+      title: "编程",
+      text: "把想法变成能点开的东西。",
+    },
+    {
+      title: "健身",
+      text: "还在慢慢找感觉。",
+    },
+    {
+      title: "生活",
+      text: "留下一些普通瞬间。",
+    },
+  ],
+
+  contactText:
+    "可以在这些地方找到我，后面也可以加 GitHub、网易云、博客入口。",
+
+  links: {
+    email: "your_email@example.com",
+    github: "https://github.com/你的GitHub用户名",
+  },
+}
