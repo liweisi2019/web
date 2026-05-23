@@ -1,0 +1,4 @@
+cd C:\web\personal-homepage
+git add .
+git commit -m "add vercel config"
+git push
